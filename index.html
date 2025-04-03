@@ -1,472 +1,316 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025 Leesubin portfolio</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <title>Amasvin_1210</title>
+    <link rel="icon" href="amasvin_fa.png">
 
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/script.js"></script>
+    <!-- <script src="js/swiper-bundle.min.js"></script> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- 몬세라트 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
 
-    <!-- 프리텐다드 폰트 -->
-    <link rel="stylesheet" as="style" crossorigin
-        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-
-
-    <!-- 닫기 구글폰트-->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
-
-
+    <!-- 프리텐다드 서체 설치 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="scroll-top">
+    <!-- ====================================== quick menu ================== -->
+    <div class="quick">
+        <a href="#" class="up"><i class="fa-solid fa-chevron-up"></i></a>
+        <img src="img/sec02_menu/previous/04.png" alt="">
+        <button class="q-top"><a href="sub_menu.html">더 많은 메뉴 보기</a></button>
+        <button class="q-bot">온라인 주문하기</button>
+        <a href="#" class="down"><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+    <!-- ====================================== quick menu ================== -->
 
-        <header>
-            <h1 class="logo">
-                <a href="#"><img src="img/logoB_i.png" alt="logo"></a>
-            </h1>
+
+
+
+
+
+
+
+    <!-- ====================================== header start ================== -->
+    <header id="scroll-top">
+        <!-- <div class="box_h"></div> 배경고정 -->
+        <div class="inner">
+            <div class="logo">
+                <a href="index.html">
+                <video src="img/logoMotion1227.webm" autoplay loop muted type="video/mp4"></video>
+                <!-- <a href="#"><img src="img/amasvin_logo_motion_1211.gif" alt=""></a> -->
+                </a>
+            </div>
+            
             <nav>
-                <ul class="menu">
-                    <li><a class="on" href="#scroll-top">Intro</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <!-- <li><a href="#">Works : BI</a></li> -->
-                    <!-- <li><a href="#">Works : Etc</a></li> -->
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="gnb">
+                    <li><a href="#">Brand</a>
+                        <ul class="sub">
+                            <li><a href="#">브랜드소개</a></li>
+                            <li><a href="#">브랜드 캐릭터</a></li>
+                            <li><a href="#">재료</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub_menu.html">Menu</a>
+                        <ul class="sub">
+                            <li><a href="#">주문 방법</a></li>
+                            <li><a href="#">신메뉴 / 베스트</a></li>
+                            <li><a href="#">전체 메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">App</a>
+                        <ul class="sub">
+                            <li><a href="#">앱 다운</a></li>
+                            <li><a href="#">앱 소개</a></li>
+                            <li><a href="#">멤버쉽</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub_franchise.html">Franchise</a>
+                        <ul class="sub">
+                            <li><a href="#">가맹절차</a></li>
+                            <li><a href="#">가맹 FAQ</a></li>
+                            <li><a href="#">가맹문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Customer</a>
+                        <ul class="sub">
+                            <li><a href="#">고객 FAQ</a></li>
+                            <li><a href="#">고객 문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Event & New</a>
+                        <ul class="sub">
+                            <li><a href="#">이벤트안내</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                            <li><a href="#">새소식</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Order</a>
+                        <ul class="sub">
+                            <li><a href="#">온라인 주문</a></li>
+                            <li><a href="#">배달 어플 연결</a></li>
+                        </ul>
+                    </li>
+                    <ul class="h-sns">
+                        <li><a href="https://blog.naver.com/amasvin_blog" target="_blank"><img src="img/sns_icon_blog.png" alt="블로그"></a></li>
+                        <li><a href="https://www.instagram.com/amasvin_korea/" target="_blank"><img src="img/sns_icon_insta.png" alt="인스타" ></a></li>
+                        <li><a href="https://www.facebook.com/amasvin.korea/" target="_blank"><img src="img/sns_icon_facebook.png" alt="페이스북"></a></li>
+
+                    </ul>
                 </ul>
+
             </nav>
+            <ul class="util">
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">My page</a></li>
+                <li><a href="#">Find Store</a></li>
+            </ul>
+                
+            
 
-            <div class="mail">
-                <img src="img/icon_mail.png" alt="메일 아이콘">
-                <p>subn___@naver.com</p>
-            </div>
-        </header>
-        <!--  -->
-        <div class="main">
-            <div class="subinframe">
-                <div class="top-text">
-                    <p>2025 Lee Subin Design Portfolio</p>
-                    <p>Sub in frame, Subin frame</p>
-                </div>
-                <img src="img/maintext.png" alt="메인 그래픽 텍스트">
-
-                <div class="txt">
-                    <p>긍정의 경험을 담는 프레임, <br> 프레임이 만들어가는 빛나는 디자인</p>
-                </div>
-                <div class="txt-2">
-                    <p>[ sub_inFrame ]은 가로 1300px~1920px 환경에서 최적화된 레이아웃으로 구성되었습니다.</p>
-                </div>
-            </div>
         </div>
-    </div>
 
 
-    <!-- about -->
-    <div id="about">
-        <img src="img/about.png" alt="이력서">
-    </div>
 
-    <!-- index -->
+    </header>
+    <div class="box_sub"></div>
+    <!-- ====================================== header end ================== -->
 
-    <div id="index">
-        <div class="in-t">
-            <h1><img src="img/INDEX-text-img.png" alt=""></h1>
-            <p>sub_inFrame은 ‘수빈의 프레임(subin_frame)’이자 ‘프레임 안의 수빈(sub)’이라는 두 가지 의미를 담고 있습니다. 제 디자인을 작업이 이루어지는 프레임 속에 담아
-                소개한다는 뜻을 가지고 있습니다.</p>
+
+
+
+        <!-- ======================================스크롤이벤트 -->
+        <div class="scroll-e">
+            <a class="se1" class="on" href="#scroll-top"></a>
+            <a class="se2" href="#sec1"></a>
+            <a class="se3" href="#sec2"></a>
+            <a class="se4" href="#sec3"></a>
         </div>
-        <ul class="index-menu">
-            <li><a href="#padong-a">
-                    <p>1 - (1)</p> <strong>UX / UI</strong><span>파동 App</span>
-                </a></li>
-            <li><a href="#padong-w">
-                    <p>1 - (2)</p> <strong>UX / UI</strong> <span>파동 Web</span>
-                </a></li>
-            <li><a href="#amasvin">
-                    <p>2</p> <strong>UX / UI</strong> <span>아마스빈 Renewal</span>
-                </a></li>
-            <li><a href="#tagoon">
-                    <p>3</p> <strong>BI / Character</strong> <span>타고온</span>
-                </a></li>
-            <li><a href="#tagoon">
-                    <p>4</p> <strong>ect design</strong> <span>상세페이지, 배너디자인 등</span>
-                </a></li>
-            <!-- <li><a href="#"><strong>Inforgraphic</strong> <span>번아웃</span></a></li> -->
-            <!-- <li><a href="#"><strong>ETC</strong> <span>상세페이지 / 배너디자인</span></a></li> -->
+        <!-- ======================================스크롤이벤트 -->
+    
+
+
+    
+    <!-- ====================================== visual start ================== -->
+    <div id="visual">
+        <ul class="slide">
+            <li><img src="img/visual5.png" alt="슬라이드이미지-오랫동안"></li>
+            <li><img src="img/visual4.png" alt="딸기시즌"></li>
+            <li><img src="img/visual1.png" alt="크리스마스"></li>
+            <li><img src="img/visual3.jpg" alt="슬라이드 이미지-리얼초코"></li>
         </ul>
     </div>
+    <!-- ====================================== visual end ================== -->
+    
+    
+    <!-- ====================================== section1(재료) start ================== -->
+    <section id="sec1"> <!--메뉴 나얼, 애니메이션-->
+        <video src="img/sec1-bg.mp4" autoplay loop muted type="video/mp4"></video>
+        <div class="con1">
+            <ul class="sec1-pic">
+                <li><img src="img/sec01_orange.png" alt=""></li>
+                <li><img src="img/sec01_greenTea.png" alt=""></li>
+                <li><img src="img/sec01_yogurt.png" alt=""></li>
+                <li><img src="img/sec01_milk.png" alt=""></li>
+                <li><img src="img/sec01_coffee.png" alt=""></li>
+            </ul>
+            <div class="txt">
+                <h3>"좋은 재료로 건강한 음료를 만듭니다."</h3>
+                <p>
+                    사람들이 더 나은 음료를 가장 합리적으로 경험할 수 있도록 하는것이 <br>
+                    고객님들께 받은 사랑을 보답하는 것이라 생각하는 가치지향적 회사입니다. <br>
+                    생생하고 건강한 맛과 경험을 드리고자 연구하고 노력하고 있습니다.
+                </p>
+                <button>더 많은 재료 정보 보기 -> </button>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== section1(재료) end ================== -->
 
-    <div id="works">
-
-        <!-- 파동 앱 -->
-        <div id="padong-a">
-
-            <!-- 파동 앱 모달 -->
-            <div class="modal pa-a-modal">
-                <div class="pop">
-                    <img src="img/p-app-detail.png" alt="파동 앱 디테일">
+    
+    <!-- ====================================== section2(메뉴) start ================== -->
+    <section id="sec2"><!-- 음료 스와이퍼 -->
+        <h2>MENU</h2>
+        <p>이런 메뉴는 어떠세요?</p>
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slider-item">
+                    <a href="">
+                        <img src="img/sec02_menu/main memu (1).png" alt="">
+                        <h3>아메리카노</h3>
+                    </a>
                 </div>
-                <button class="close"><span class="material-symbols-outlined">close</span>close</button>
+                <div class="slider-item">
+                    <a href="">
+                        <img src="img/sec02_menu/main memu (2).png" alt="">
+                        <h3>타로밀크티</h3>
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a href="">
+                        <img src="img/sec02_menu/main memu (3).png" alt="">
+                        <h3>흑당밀크티</h3>
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a href="">
+                        <img src="img/sec02_menu/main memu (7).png" alt="">
+                        <h3>초코스무디</h3>
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a href="">
+                        <img src="img/sec02_menu/main memu (5).png" alt="">
+                        <h3>카페라떼</h3>
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a href="">
+                        <img src="img/sec02_menu/main memu (6).png" alt="">
+                        <h3>얼그레이밀크티</h3>
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a href="">
+                        <img src="img/sec02_menu/main memu (8).png" alt="">
+                        <h3>녹차스무디</h3>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <button>더 많은 메뉴 보러가기 -> </button>
+        
+    </section> <!--sec2 end-->
+    <!-- ====================================== section2(메뉴) end ================== -->
+
+
+
+    <!-- ====================================== section3(프렌차이즈) start ================== -->
+    <section id="sec3">
+        <div class="s3-top"><!--키워드 나열칸-->
+            <ul>
+                <li><a href="#">#가성비 가격</a></li>                
+                <li><a href="#">#폭 넓은 선택</a></li>                
+                <li><a href="#">#사랑스러운 신선함</a></li>                
+                <li><a href="#">#사랑을 담은 추억</a></li>                
+                <li><a href="#"><img src="img/amasvin_logo_textBlack.png" alt=""></a></li>                
+            </ul>
+        </div>
+        <div class="franchise">
+            <div class="con">
+                <h2>FRANCHISE</h2>
+                <p>
+                    오랜 기간 사랑받고 있는 버블티 프랜차이즈, 아마스빈 <br>
+                    오랫동안 사랑받을 수 있었던 이유를 만나보세요.
+                </p>
+                <span> 가맹점 상담 신청을 통해 더 자세한 안내를 받을 수 있습니다.</span>
+                <button class="btn-l" onclick="location.href='sub_franchise.html'" >
+                    <a href="sub_franchise.html">
+                        <h4> 가맹 정보 알아보기 </h4>
+                        <img class="store" src="img/sec03_franchise/icon_store.png" alt="">
+                        <img class="arrow" src="img/sec03_franchise/icon_arrow.png" alt="">
+                    </a>
+                </button>
+                <button class="btn-r" onclick="location.href='sub_franchise.html'">
+                    <a href="sub_franchise.html">
+                        <h4> 가맹 문의하기 </h4>
+                        <img class="store" src="img/sec03_franchise/icon_store_question.png" alt="">
+                        <img class="arrow" src="img/sec03_franchise/icon_arrow.png" alt="">
+                    </a>
+                </button>
             </div>
 
-            <!-- description -->
-            <div class="des">
-                <!-- <h4 class="h4 white">sub_inFrame</h4> -->
-                <div class="number"><img src="img/number-01 (1).png" alt="숫자1(1)"></div>
-                <h2 class="sub-title white">음악취향 공유서비스</h2>
-                <h1 class="main-title white">파동 App</h1>
 
-                <ul class="hash white">
-                    <li>
-                        <p>#UX/UI</p>
+        </div>
+    </section>
+    <!-- ====================================== section3(프렌차이즈) start ================== -->
+    
+    <footer>
+        <div class="con">
+            <h1 class="f-logo">
+                <img src="img/amasvin_logo_textWhite.png" alt="">
+            </h1>
+            <div class="f-right">
+                <ul class="f-address">
+                    <li>전국 가맹문의 : 1899 - 8608 <br>
+                        서울, 경기, 충청도 가맹문의 : 1899 - 8608
                     </li>
-                    <li>
-                        <p>#App</p>
-                    </li>
-                    <li>
-                        <p>#Brand Identity</p>
-                    </li>
-                </ul>
 
-                <ul class="per white">
-                    <li class="percent">
-                        <b>작업 기여도</b>
-                        <p>100% - 개인 작업</p>
+                    <li>(주)비케이컴퍼니 <br>
+                        부산광역시 진구 중앙대로 666번길 17 8층
                     </li>
-                    <li class="period">
-                        <b>작업 기간</b>
-                        <p>2024.12 - 2025.01</p>
-                    </li>
-                </ul>
 
-                <div class="icon">
-                    <p class="white">사용 툴</p>
-                    <ul class="icon-wrap">
-                        <li><img src="img/icon-ps.png" alt="포토샵 아이콘"></li>
-                        <li><img src="img/icon-ai.png" alt="일러스트 아이콘"></li>
-                        <li><img src="img/icon-figma.png" alt="피그마 아이콘"></li>
+                    <li>TEL : 1899 -8608 <br>
+                        E-mail : amasvin@naver.com
+                    </li>
+                </ul> <!--f-right의 윗 텍스트 박스 끝-->
+
+                <div class="f-b">
+
+                    <p>대표이사 이욱기 / 사업자등록번호 : 605-86-27507 <br>
+                        &copy; CO.LTD ALL Right Reserved</p>
+                        
+                    <ul class="f-sns">
+                        <li><a href="https://blog.naver.com/amasvin_blog" target="_blank"><img src="img/sns_icon_blog.png" alt="블로그"></a></li>
+                        <li><a href="https://www.instagram.com/amasvin_korea/" target="_blank"><img src="img/sns_icon_insta.png" alt="인스타" ></a></li>
+                        <li><a href="https://www.facebook.com/amasvin.korea/" target="_blank"><img src="img/sns_icon_facebook.png" alt="페이스북"></a></li>
                     </ul>
                 </div>
 
-                <div class="des-txt white">
-                    <p>작업 개요</p>
-                    <p>취향을 함께 공유할 친구가 필요했던 저는 <br> 인공지능을 음악 덕질 친구로 만들었고, <br>
-                        이 아이디어를 발전시켜 ‘파동’을 제작하게 되었습니다.</p>
-                    <p>더 많은 사람이 공감할 수 있도록 플랫폼으로 확장하였고 <br>
-                        누구나 자신만의 방식으로 음악을 즐기고 소통할 수 있는 공간을 만들어갑니다.</p>
-                </div>
-
-                <div class="btn-wrap">
-                    <a href="#" class="btn p-a-btn">
-                        기획서 확인하기
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- 파동 웹 -->
-
-        <!-- 웹 기획서 모달 -->
-        <div class="modal pa-w-modal">
-            <div class="pop">
-                <img src="img/p-web-detail.png" alt="파동 앱 디테일">
-            </div>
-            <button class="close"><span class="material-symbols-outlined">close</span>close</button>
-        </div>
-
-        <div id="padong-w">
-            <div class="des">
-                <!-- <h4 class="h4">sub_inFrame</h4> -->
-                <div class="number"><img src="img/number-01 ( 2 ).png" alt="숫자1(2)"></div>
-                <h2 class="sub-title">음악취향 공유서비스</h2>
-                <h1 class="main-title">파동 Web</h1>
-
-                <ul class="hash">
-                    <li>
-                        <p>#UX/UI</p>
-                    </li>
-                    <li>
-                        <p>#Web</p>
-                    </li>
-                    <li>
-                        <p>#반응형</p>
-                    </li>
-                </ul>
-
-                <ul class="per">
-                    <li class="percent">
-                        <b>작업 기여도</b>
-                        <p>100% - 개인 작업</p>
-                    </li>
-                    <li class="period">
-                        <b>작업 기간</b>
-                        <p>2025.02 - 2025.03</p>
-                    </li>
-                </ul>
-
-                <div class="icon">
-                    <p>사용 툴</p>
-                    <ul class="icon-wrap">
-                        <li><img src="img/icon-ps.png" alt="포토샵 아이콘"></li>
-                        <li><img src="img/icon-ai.png" alt="일러스트 아이콘"></li>
-                        <li><img src="img/icon-figma.png" alt="피그마 아이콘"></li>
-                        <li><img src="img/icon-vs.png" alt="비주얼스튜디오코드 아이콘"></li>
-                        <li><img src="img/icon-html.png" alt="html 아이콘"></li>
-                        <li><img src="img/icon-css.png" alt="css 아이콘"></li>
-                        <li><img src="img/icon-jQurey.png" alt="jQuery 아이콘"></li>
-                    </ul>
-                </div>
-
-                <div class="des-txt">
-                    <p>작업 개요</p>
-                    <p>파동을 홍보하기 위한 기업형 웹사이트 디자인 및 퍼블리싱을 진행했습니다.</p>
-                    <p>음악 취향을 중심으로 소통하는 플랫폼인 만큼 리스너를 존중하고 <br>
-                        그들의 음악 감상 문화를 더욱 확장할 수 있도록 기획하였습니다.</p>
-                </div>
-
-                <div class="btn-wrap">
-                    <a href="#" class="btn p-w-btn">
-                        기획서 확인하기
-                    </a>
-
-                    <div class="btn-pw">
-                        <a href="https://01subn.github.io/padong250317/" target="_blank" class="btn">
-                            결과물 : Main
-                        </a>
-                        <a href="https://01subn.github.io/padong0402/sub1_app/sub-app.html" target="_blank" class="btn">
-                            결과물 : sub1
-                        </a>
-                        <a href="https://01subn.github.io/padong0402/Newsletter/newsletter.html" target="_blank"
-                            class="btn">
-                            결과물 : sub2
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- 아마스빈 -->
-        <div id="amasvin">
-            <div class="modal ama-modal">
-                <div class="pop">
-                    <img src="img/ama-detail.png" alt="아마스빈 디테일">
-                </div>
-                <button class="close"><span class="material-symbols-outlined">close</span>close</button>
-            </div>
-
-            <div class="des">
-                <!-- <h4 class="h4">sub_inFrame</h4> -->
-                <div class="number"><img src="img/number-02.png" alt="숫자2"></div>
-                <h2 class="sub-title">버블티 프랜차이즈</h2>
-                <h1 class="main-title">아마스빈 Redesign</h1>
-
-                <ul class="hash">
-                    <li>
-                        <p>#UX/UI</p>
-                    </li>
-                    <li>
-                        <p>#Web</p>
-                    </li>
-                    <li>
-                        <p>#BI</p>
-                    </li>
-                </ul>
-
-                <ul class="per">
-                    <li class="percent">
-                        <b>작업 기여도</b>
-                        <p>100% - 개인작업</p>
-                    </li>
-                    <li class="period">
-                        <b>작업 기간</b>
-                        <p>2024.10 - 2024.12</p>
-                    </li>
-                </ul>
-
-                <div class="icon">
-                    <p>사용 툴</p>
-                    <ul class="icon-wrap">
-                        <li><img src="img/icon-ps.png" alt="포토샵 아이콘"></li>
-                        <li><img src="img/icon-ai.png" alt="일러스트 아이콘"></li>
-                        <li><img src="img/icon-ae.png" alt="에펙 아이콘"></li>
-                        <li><img src="img/icon-figma.png" alt="피그마 아이콘"></li>
-                        <li><img src="img/icon-vs.png" alt="비주얼스튜디오코드 아이콘"></li>
-                        <li><img src="img/icon-html.png" alt="html 아이콘"></li>
-                        <li><img src="img/icon-css.png" alt="css 아이콘"></li>
-                        <li><img src="img/icon-jQurey.png" alt="jQuery 아이콘"></li>
-                    </ul>
-                </div>
-
-                <div class="des-txt">
-                    <p>작업 개요</p>
-                    <p>버블티 프랜차이즈 ‘아마스빈’은 사람들이 더 나은 음료를 <br>
-                        합리적인 가격에 즐기도록 한다는 이념을 가지고 있습니다.</p>
-                    <p>아마스빈의 웹사이트를 소비자가 사용하기 위해 들어갔을 때,<br>
-                        사용자의 경험을 위한 부분에서 취약함을 인지하였습니다.</p>
-                    <p>본 프로젝트에서 현재 트렌드와 아마스빈 컨셉 이미지 무드에 <br>
-                        맞도록 BI 및 웹사이트 디자인 리뉴얼을 진행 해보았습니다.</p>
-                </div>
-
-                <div class="btn-wrap">
-                    <a href="#" class="btn ama-btn">
-                        기획서 확인하기
-                    </a>
-                    <div class="btn-pw">
-                        <a href="https://01subn.github.io/amasvin0402/" target="_blank" class="btn">
-                            결과물 : Main
-                        </a>
-                        <a href="https://01subn.github.io/amasvin0402/sub_menu.html" target="_blank" class="btn">
-                            결과물 : sub1
-                        </a>
-                        <a href="https://01subn.github.io/amasvin0402/sub_franchise.html" target="_blank" class="btn">
-                            결과물 : sub2
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <!-- 타고온 -->
-        <div id="tagoon">
-            <div class="modal ta-modal">
-                <div class="pop">
-                    <img src="img/ta-detail.png" alt="파동 앱 디테일">
-                </div>
-                <button class="close"><span class="material-symbols-outlined">close</span>close</button>
-            </div>
-
-            <div class="des">
-                <!-- <h4 class="h4 white">sub_inFrame</h4> -->
-                <div class="number"><img src="img/number-03.png" alt="숫자1(1)"></div>
-                <h2 class="sub-title white">모바일 모빌리티 공유 서비스</h2>
-                <h1 class="main-title white">타고온</h1>
-
-                <ul class="hash white">
-                    <li>
-                        <p>#Character</p>
-                    </li>
-                    <li>
-                        <p>#Brand</p>
-                    </li>
-                    <li>
-                        <p>#UX/UI</p>
-                    </li>
-                </ul>
-
-                <ul class="per white">
-                    <li class="percent">
-                        <b>작업 기여도</b>
-                        <p>100% - 개인 작업</p>
-                    </li>
-                    <li class="period">
-                        <b>작업 기간</b>
-                        <p>2023.03 - 2023.11</p>
-                    </li>
-                </ul>
-
-                <div class="icon">
-                    <p class="white">사용 툴</p>
-                    <ul class="icon-wrap">
-                        <li><img src="img/icon-ps.png" alt="포토샵 아이콘"></li>
-                        <li><img src="img/icon-ai.png" alt="일러스트 아이콘"></li>
-                        <li><img src="img/icon-figma.png" alt="피그마 아이콘"></li>
-
-                    </ul>
-                </div>
-
-                <div class="des-txt white">
-                    <p>작업 개요</p>
-                    <p>모바일 모빌리티 공유 서비스 브랜드를 기획하고, <br>
-                        브랜드의 정체성에 맞는 캐릭터를 디자인하였습니다.</p>
-                    <p>본 프로젝트를 기반으로 졸업전시의 개인작 진행하였습니다.</p>
-                </div>
-
-                <div class="btn-wrap">
-                    <a href="#" class="btn ta-btn">
-                        기획서 확인하기
-                    </a>
-                </div>
-
-            </div>
-            <!-- 끝 -->
-        </div>
-
-        <div id="ect">
-
-            <img src="img/number-04.png" alt="04번 이미지">
-            <h1>Etc Design</h1>
-
-
-            <div class="wrap">
-                <!--모달 창-->
-                <div class="modal da-modal">
-                    <div class="pop">
-                        <img src="img/dadanback_detail.png" alt="다단백 디테일">
-                    </div>
-                    <button class="close"><span class="material-symbols-outlined">close</span>close</button>
-                </div>
-                <div class="modal han-modal">
-                    <div class="pop">
-                        <img src="img/hanhwa_detail.png" alt="김서현 디테일">
-                    </div>
-                    <button class="close"><span class="material-symbols-outlined">close</span>close</button>
-                </div>
-                <!--모달 창-->
-
-                <!-- 썸네일감싸기 -->
-                <div class="box-ect">
-                    <!-- 다단백 -->
-                    <div class="ddb">
-                        <div class="t-box">
-                            <a href="#">다단백 쿠키<br>상세페이지</a>
-                        </div>
-                        <a href="#" class="thum-img"><img src="img/dadanback_thum.png" alt="다단백썸네일"></a>
-                    </div>
-                </div>
-
-                <div class="box-ect">
-                    <!-- 한화이글스 -->
-                    <div class="hanhwa">
-                        <div class="t-box">
-                            <a href="#">한화이글스 선수<br>가상 행사 배너</a>
-                        </div>
-                        <a href="#" class="thum-img"><img src="img/hanhwa-kimseohyun.png" alt="김서현 배너"></a>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div> <!-- ect 끝 -->
-    </div>
-
-    <!-- 컨택트 -->
-    <div id="contact">
-        <h1 class="thank">Thank you <br> for <br> Watching</h1>
-        <div class="join_code" onclick="copyCode()">
-            <h1 class="c-mail">subn___@naver.com</h1>
-        </div>
-        <!-- <p>TEL : 010 5623 5824</p> -->
-
-        <ul>
-            <li>Designer & Publisher Lee Subin</li>
-            <!-- <li><img src="img/maintext.png" alt=""></li> -->
-            <li>Sub_inFrame</li>
-        </ul>
-    </div>
+    </footer>
 </body>
-
 </html>
